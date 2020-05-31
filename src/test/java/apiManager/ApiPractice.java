@@ -121,7 +121,7 @@ public class ApiPractice {
 		List<Object> courses=js.getList("courses");
 		
 		System.out.println("number of courses "+courses.size());
-		
+		 System.out.println("branch");
 		int totalPrice=0;
 		for(int i=0;i<courses.size();i++) {
 			totalPrice=totalPrice+((prices.get(i))*(copies.get(i)));
