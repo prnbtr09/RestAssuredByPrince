@@ -10,10 +10,11 @@ import io.cucumber.junit.CucumberOptions;
 //		/"src/test/resources/Features",
 features= {"src/test/resources/ParallelFeatures"},
 glue= {"stepDefinitions","hooks"},
-plugin= {"json:target/report/cucumber-reports" }, strict=false, tags= {"@Login"}
+plugin= {"pretty", "junit:target/cucumber.xml","html:target/cucumber-reports" }, strict=false
 )
+
 public class TestRunner {
-	
+
 	
 }
 
